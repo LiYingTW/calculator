@@ -13,6 +13,7 @@ exports.calculate = function(req, res) {
   var operations = {
     //(+a) to coere variables to numbers (avoid: 21 + 22 becomes the string '2122'instead of the number 43
     'add':      function(a,b) { return +a + +b },
+
     'subtract': function(a,b) { return a - b },
     'multiply': function(a,b) { return a * b },
     'divide':   function(a,b) { return a / b },
